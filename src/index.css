@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #f5f5f7;
+  color: #1f2937;
+}
+
+/* FullCalendar overrides */
+.fc {
+  --fc-border-color: #e5e7eb;
+  --fc-today-bg-color: #f3f4f6;
+  --fc-button-bg-color: #111827;
+  --fc-button-border-color: #111827;
+  --fc-button-hover-bg-color: #374151;
+  --fc-button-hover-border-color: #374151;
+  --fc-button-active-bg-color: #1f2937;
+  font-size: 0.875rem;
+}
+.fc .fc-button {
+  border-radius: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  text-transform: capitalize;
+}
+.fc .fc-toolbar-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
